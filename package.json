@@ -1,0 +1,19 @@
+{
+  "name": "themysteriesoftheuniverse",
+  "version": "1.0.0",
+  "description": "A project to explore the mysteries of the universe.",
+  "main": "generate-version.js",
+  "scripts": {
+    "build": "node generate-version.js && echo 'Build process complete'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TymbalTech/themysteriesoftheuniverse.git"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TymbalTech/themysteriesoftheuniverse/issues"
+  },
+  "homepage": "https://github.com/TymbalTech/themysteriesoftheuniverse#readme"
+}
