@@ -18,6 +18,8 @@ A playground to expand tech skills and learn new tech.
   - JavaScript runtime environment used for running scripts.
 - **npm**
   - Package manager for managing dependencies and running scripts.
+- **GitHub Actions**
+  - Automates the CI/CD pipeline for building, testing, and deploying the project.
 
 ## Structure
 
