@@ -2,7 +2,7 @@
 
 ## Description
 
-A playground to expand tech skills.
+A playground to expand tech skills and learn new tech.
 
 ## Technologies
 
