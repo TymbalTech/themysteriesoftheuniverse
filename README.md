@@ -2,22 +2,26 @@
 
 ## Description
 
-A playground to expand tech skills and learn new tech.
+A playground to expand tech skills, test ideas, and learn new tech.
 
 ## Technologies
 
 - **HTML5**
-  - Adherence to W3C standards, using semantic HTML and ARIA roles/attributes.
-- **CSS3**
-  - Utilizing CSS Grid Layout for responsive design.
+  - Goal 1: adhere to W3C standards, using semantic HTML and ARIA roles/attributes. Code will need to reviewed, validated, and updated routinely.
+- **CSS3 Bootstrap SASS**
+  - Goal 1: Use CSS Grid Layout for responsive design. This is in development que.
+  - Goal 2: Implement Bootstrap. This is in development que.
+  - Goal 3: Implement SASS. This is in development que.
 - **JavaScript**
-  - Tracking published version with a console log.
+  - Goal 1: Currently tracking the published version with a console log that uses GitHub Actions to establish both client and server side JS functionality.
 - **Vue**
-  - Used for implementing a carousel.
+  - Goal 1: Will be used for implementing a carousel. This is in development que.
 - **Node.js**
-  - JavaScript runtime environment used for running scripts.
+  - Goal 1: Currently used for running the published version script that logs the last date and time.
 - **npm**
-  - Package manager for managing dependencies and running scripts.
+  - Currently managing these dependencies:
+    - The script set up to run the versioning script (generate-version.js) as part of the CI/CD pipeline.
+    - Future dependcies list here.
 - **GitHub Actions**
   - Automates the CI/CD pipeline for building, testing, and deploying the project.
 
@@ -25,26 +29,31 @@ A playground to expand tech skills and learn new tech.
 
 ### Directories
 
-- **public/**: Contains publicly accessible files.
+- **.github/workflows/**: Contains GitHub Actions workflows.
 
-  - `index.html`: The main HTML file for the project.
-  - `css/`: Directory for CSS files.
-    - `styles.css`: The main stylesheet.
-  - `assets/`: Directory for images, fonts, and other static assets.
+  - `ci.yml`: Workflow file for CI/CD pipeline.
 
-- **src/**: Contains source files.
+- **css/**:
+
+  - `styles.css`:
+
+- **src/**:
 
   - `scripts/`: Directory for JavaScript files.
     - `script.js`: The main JavaScript file.
-  - `styles/`: Directory for Sass/CSS source files.
 
-- **.github/workflows/**: Contains GitHub Actions workflows.
-  - `ci.yml`: Workflow file for CI/CD pipeline.
-
-### Key Files
-
-- **README.md**: Documentation for the project.
-- **.gitignore**: Specifies files and directories to be ignored by Git.
-- **package.json**: Configuration file for npm, including scripts and dependencies.
-- **generate-version.js**: Script to generate `version.txt` with the last commit date and time.
-- **version.txt**: File that stores the last commit date and time.
+- **root/**: Contains the publicly accessible files.
+  - `.gitignore`: Specifies files and directories to be ignored by Git.
+  - `android-chrome-192x192.png`: High-resolution icon for Android devices.
+  - `android-chrome-512x512.png`: High-resolution icon for Android devices.
+  - `apple-touch-icon.png`: Icon for iOS devices.
+  - `CNAME`:
+  - `favicon-16x16.png`: Standard favicon size.
+  - `favicon-32x32.png`: Standard favicon size.
+  - `favicon.ico`: The favicon file.
+  - `generate-version.js`: Node.js script to generate `version.txt` with the last commit date and time.
+  - `index.html`: The main HTML file for the project.
+  - `package-lock.json`:
+  - `package.json`: Configuration file for npm, including scripts and dependencies.
+  - `README.md`: Documentation for the project, with details about the what is developed and what will be developed.
+  - `version.txt`: File that stores the last commit date and time.
