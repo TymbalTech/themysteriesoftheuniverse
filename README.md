@@ -38,6 +38,8 @@ A new playground to expand tech skills, test ideas, and learn new tech.
 
   - `styles.css`:
 
+- **images/**: Initial file for images to be used in the site.
+
 - **src/**:
 
   - `scripts/`: Directory for JavaScript files.
@@ -65,9 +67,20 @@ A new playground to expand tech skills, test ideas, and learn new tech.
 ### Date: 2024-07-11
 
 - Added `site.manifest` file to the root directory.
+
   - Included metadata for PWA support.
   - Updated `index.html` to reference the `site.manifest`.
 
 - Added a Milky Way image as a background placeholder.
   - Placed `milkyway.jpg` in the `root/images/` directory.
   - Updated `css/styles.css` to set the background image.
+
+## Future Considerations
+
+### CSS Work
+
+- Implement a CSS reset to standardize styling across browsers.
+- Use CSS Grid Layout for complex and responsive designs.
+- Add custom fonts for headlines and paragraphs to enhance typography.
+- Learn and integrate Bootstrap for responsive design and ready-made components.
+- Learn and integrate SASS for better organization and maintainability of CSS.
