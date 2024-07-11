@@ -2,12 +2,13 @@
 
 ## Description
 
-A playground to expand tech skills, test ideas, and learn new tech.
+A new playground to expand tech skills, test ideas, and learn new tech.
 
 ## Technologies
 
 - **HTML5**
   - Goal 1: adhere to W3C standards, using semantic HTML and ARIA roles/attributes. Code will need to reviewed, validated, and updated routinely.
+  - Goal 2: Include manifest file for PWA support. This will need to be updated as design is developed.
 - **CSS3 Bootstrap SASS**
   - Goal 1: Use CSS Grid Layout for responsive design. This is in development que.
   - Goal 2: Implement Bootstrap. This is in development que.
@@ -56,4 +57,13 @@ A playground to expand tech skills, test ideas, and learn new tech.
   - `package-lock.json`:
   - `package.json`: Configuration file for npm, including scripts and dependencies.
   - `README.md`: Documentation for the project, with details about the what is developed and what will be developed.
+  - `site.manifest`: Initial file created for PWA support.
   - `version.txt`: File that stores the last commit date and time.
+
+## Recent Updates
+
+### Date: 2024-07-11
+
+- Added `site.manifest` file to the root directory.
+  - Included metadata for PWA support.
+  - Updated `index.html` to reference the `site.manifest`.
