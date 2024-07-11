@@ -67,3 +67,7 @@ A new playground to expand tech skills, test ideas, and learn new tech.
 - Added `site.manifest` file to the root directory.
   - Included metadata for PWA support.
   - Updated `index.html` to reference the `site.manifest`.
+
+- Added a Milky Way image as a background placeholder.
+  - Placed `milkyway.jpg` in the `root/images/` directory.
+  - Updated `css/styles.css` to set the background image.
