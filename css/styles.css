@@ -160,3 +160,6 @@ body::before {
   color: white; /* Adjust text color for better readability */
   padding: 20px;
 }
+.text-light-blue {
+  color: #bed8f1;
+}
