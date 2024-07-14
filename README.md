@@ -31,9 +31,11 @@ A playground to expand tech skills, test ideas, and learn new tech.
 ### Directories
 
 - **.github/workflows/**: Contains GitHub Actions workflows.
+
   - `ci.yml`: Workflow file for CI/CD pipeline.
 
 - **css/**: Directory for CSS files.
+
   - `normalize.css`: CSS reset file to standardize browser styling.
   - `styles.css`: Main stylesheet for the project.
   - **components/**: Directory for modular CSS components.
@@ -41,9 +43,11 @@ A playground to expand tech skills, test ideas, and learn new tech.
     - `footer.css`: Styles for the footer component.
 
 - **images/**: Directory for image assets.
+
   - `milkyway.jpg`: Placeholder background image of the Milky Way.
 
 - **js/**: Directory for JavaScript files.
+
   - `script.js`: The main JavaScript file.
 
 - **root/**: Contains the publicly accessible files.
@@ -65,6 +69,10 @@ A playground to expand tech skills, test ideas, and learn new tech.
 
 ## Recent Updates
 
+### Date: 2024-07-14
+
+- Added google fonts for headlines and paragraphs.
+
 ### Date: 2024-07-13
 
 - Restructured project directories for better organization.
@@ -79,6 +87,12 @@ A playground to expand tech skills, test ideas, and learn new tech.
 ### CSS Work
 
 - Use CSS Grid Layout for complex and responsive designs.
-- Add custom fonts for headlines and paragraphs to enhance typography.
-- Learn and integrate Bootstrap for responsive design and ready-made components.
-- Learn and integrate SASS for better organization and maintainability of CSS.
+- Create parallax star field.
+- Create twinkle animation for stars.
+- Integrate Bootstrap for responsive design and ready-made components.
+- Integrate SASS for better organization and maintainability of CSS.
+
+### Javascript Work
+
+- Astrological Sign Calendar
+- Moon Phase Calendar
