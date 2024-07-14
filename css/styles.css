@@ -1,3 +1,67 @@
+/*---INDEX---------------------*/
+/*** 1.0 BOX SIZING ***/
+/*** 2.0 COLORS ***/
+/*** 3.0 TEXT & FONTS ***/
+/*** 4.0 PAGE CONSTRUCTION ***/
+/*-----------------------------*/
+
+/*** 1.0 BOX SIZING ***/
+* {
+  box-sizing: border-box;
+}
+/* Keeping the border and padding inside the box measurement */
+
+/*** 2.0 COLORS ***/
+/* #9B3AEB Saturated Violet */
+/* #31188C Ultrviolet */
+/* #00265D Dark Blue */
+/* #BED8F1 Light Blue */
+/* #0F1926 New Moon Black */
+
+/*** 3.0 TEXT & FONTS ***/
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Uncial+Antiqua&display=swap");
+
+.site-title {
+  font-family: "Uncial Antiqua", cursive;
+  font-size: 2.5em;
+  text-align: center;
+  color: #bed8f1; /* Light Blue */
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.75em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.25em;
+}
+
+p,
+blockquote,
+q,
+figure,
+figcaption,
+sub,
+sup {
+  font-family: "Crimson Pro", serif;
+}
+
+/*** 4.0 PAGE CONSTRUCTION ***/
 body {
   background-image: url("../images/milkyway.jpg");
   background-size: cover;
@@ -22,10 +86,5 @@ body::before {
 .content {
   position: relative;
   z-index: 2;
-  color: white; /* Adjust text color for better readability */
   padding: 20px;
-}
-
-.text-light-blue {
-  color: #bed8f1;
 }
