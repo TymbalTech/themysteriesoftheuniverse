@@ -118,7 +118,7 @@ body::before {
   animation: twinkle 3s infinite alternate; /* Twinkling animation */
   position: absolute;
   top: 50%; /* Vertical position */
-  right: -40px; /* Horizontal position */
+  right: -10px; /* Horizontal position */
   transform: translateY(-50%); /* Center vertically */
 }
 
