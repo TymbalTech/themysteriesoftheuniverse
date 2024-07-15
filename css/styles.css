@@ -1,34 +1,30 @@
 /*---INDEX---------------------*/
-/*** 1.0 BOX SIZING ***/
-/*** 2.0 COLORS ***/
-/*** 3.0 TEXT & FONTS ***/
-/*** 4.0 GRID DEFINITION ***/
-/*** 5.0 PAGE LAYOUT ***/
+/*** 1. BOX SIZING ***/
+/*** 2. COLORS ***/
+/*** 3. TEXT & FONTS ***/
+/*** 4. PAGE LAYOUT ***/
+/*** 5. CSS GRID DEFINITION ***/
+/*** 6. SITE TITLE SECTION ***/
+/*** 7. CAROUSEL SECTION ***/
 /*-----------------------------*/
 
-/*** 1.0 BOX SIZING ***/
+/*** 1. BOX SIZING ***/
 * {
   box-sizing: border-box;
 }
 /* Keeping the border and padding inside the box measurement */
 
-/*** 2.0 COLORS ***/
+/*** 2. COLORS ***/
 /* #9B3AEB Saturated Violet */
 /* #31188C Ultrviolet */
 /* #00265D Dark Blue */
 /* #BED8F1 Light Blue */
 /* #0F1926 New Moon Black */
 
-/*** 3.0 TEXT & FONTS ***/
+/*** 3. TEXT & FONTS ***/
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Uncial+Antiqua&display=swap");
 
-.site-title {
-  font-family: "Uncial Antiqua", cursive;
-  font-size: 2.5em;
-  text-align: center;
-  color: #bed8f1; /* Light Blue */
-}
-
+/* Font styles for headings */
 h1,
 h2,
 h3,
@@ -51,6 +47,7 @@ h4 {
   font-size: 1.25em;
 }
 
+/* Font styles for other text elements */
 p,
 blockquote,
 q,
@@ -61,9 +58,7 @@ sup {
   font-family: "Crimson Pro", serif;
 }
 
-/*** 4.0 GRID DEFINITION ***/
-
-/*** 5.0 PAGE LAYOUT ***/
+/*** 4. PAGE LAYOUT ***/
 body {
   margin: 0;
   height: 100vh;
@@ -71,6 +66,7 @@ body {
   position: relative;
 }
 
+/* Background image with parallax effect */
 body::before {
   content: "";
   background-image: url("../images/Mysterious-Universe.jpg");
@@ -85,6 +81,7 @@ body::before {
   z-index: -1;
 }
 
+/* Content container */
 .content {
   position: relative;
   z-index: 2;
@@ -92,6 +89,10 @@ body::before {
   text-align: center;
 }
 
+/*** 5. CSS GRID DEFINITION ***/
+
+/*** 6. SITE TITLE SECTION ***/
+/* Container for the site title and the twinkling star */
 .site-title-container {
   display: flex;
   align-items: center;
@@ -99,6 +100,7 @@ body::before {
   position: relative;
 }
 
+/* Styles for the site title image */
 .site-title {
   display: block;
   max-width: 100%;
@@ -106,27 +108,28 @@ body::before {
   text-align: center;
 }
 
+/* Styles for the twinkling star */
 .twinkling-star {
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
-  animation: twinkle 1.5s infinite alternate;
+  width: 10px; /* Width of the star */
+  height: 10px; /* Height of the star */
+  background-color: #fff; /* Color of the star */
+  border-radius: 50%; /* Make the star round */
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff; /* Glowing effect */
+  animation: twinkle 3s infinite alternate; /* Twinkling animation */
   position: absolute;
-  top: 50%;
-  right: -20px; /* Adjust this value based on the size and position you want */
-  transform: translateY(-50%);
+  top: 50%; /* Vertical position */
+  right: -40px; /* Horizontal position */
+  transform: translateY(-50%); /* Center vertically */
 }
 
 /* Twinkling effect */
 @keyframes twinkle {
   0% {
-    opacity: 1;
-    transform: scale(1);
+    opacity: 1; /* Start with full opacity */
+    transform: scale(1); /* Normal size */
   }
   100% {
-    opacity: 0.3;
-    transform: scale(1.2);
+    opacity: 0.8; /* Brighter at the peak */
+    transform: scale(1.2); /* Slightly larger */
   }
 }

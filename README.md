@@ -69,9 +69,15 @@ A playground to expand tech skills, test ideas, and learn new tech.
 
 ## Recent Updates
 
+### Date: 2024-07-15
+
+- Added twinkling star.
+
 ### Date: 2024-07-14
 
 - Added google fonts for headlines and paragraphs.
+- Added site title image.
+- Replaced background image.
 
 ### Date: 2024-07-13
 
