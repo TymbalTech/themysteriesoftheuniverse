@@ -94,42 +94,84 @@ body::before {
 /*** 6. SITE TITLE SECTION ***/
 /* Container for the site title and the twinkling star */
 .site-title-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center items */
+  justify-content: center; /* Horizontally center items */
+  position: relative; /* Position relative to contain absolute children */
 }
 
 /* Styles for the site title image */
 .site-title {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  text-align: center;
+  display: block; /* Display as a block element */
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  text-align: center; /* Center text inside */
 }
 
 /* Styles for the twinkling star */
 .twinkling-star {
-  width: 10px; /* Width of the star */
-  height: 10px; /* Height of the star */
-  background-color: #fff; /* Color of the star */
-  border-radius: 50%; /* Make the star round */
-  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff; /* Glowing effect */
-  animation: twinkle 3s infinite alternate; /* Twinkling animation */
-  position: absolute;
-  top: 50%; /* Vertical position */
-  right: -10px; /* Horizontal position */
-  transform: translateY(-50%); /* Center vertically */
+  width: 10px; /* Initial width of the star */
+  height: 10px; /* Initial height of the star */
+  background-color: #fff; /* Initial color of the star */
+  border-radius: 50%; /* Start with a round shape */
+  position: absolute; /* Position absolutely inside the container */
+  top: 15%; /* Center vertically */
+  right: 150px; /* Position to the right of the site title */
+  transform: translateY(-50%); /* Center the star vertically */
+  animation: twinkle 3s infinite alternate, grow-star 3s infinite alternate; /* Twinkling and growing animation */
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff; /* Initial subtle glow */
+}
+
+/* Star shape using pseudo-elements */
+.twinkling-star::before {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position absolutely inside the parent */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  width: 20px; /* Initial width */
+  height: 20px; /* Initial height */
+  background-color: #fff; /* Initial color */
+  border-radius: 50%; /* Start with a round shape */
+  transform: translate(-50%, -50%) scale(0.5); /* Center and scale down */
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  ); /* Star shape *
+  opacity: 0; /* Start fully transparent */
+  transition: opacity 0.3s ease-in-out; /* Smooth opacity transition */
+  animation: grow-star 3s infinite alternate; /* Growing animation */
 }
 
 /* Twinkling effect */
 @keyframes twinkle {
   0% {
-    opacity: 1; /* Start with full opacity */
-    transform: scale(1); /* Normal size */
+    opacity: 1; /* Start fully opaque */
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff; /* Initial glow */
   }
   100% {
-    opacity: 0.8; /* Brighter at the peak */
-    transform: scale(1.2); /* Slightly larger */
+    opacity: 0.5; /* Dimmed at the peak */
+    box-shadow: 0 0 5px #fff; /* Dimmed glow */
+  }
+}
+
+/* Growing and morphing star shape */
+@keyframes grow-star {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5); /* Small size and centered */
+    opacity: 0.5; /* Start dimmed */
+    background-color: #fff; /* White color */
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.2); /* Larger size and centered */
+    opacity: 1; /* End opaque */
+    background-color: #fff; /* White color */
   }
 }
