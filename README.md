@@ -30,13 +30,16 @@ A playground to expand tech skills, test ideas, and learn new tech.
 
 ### Directories
 
-- **.github/workflows/**: Contains GitHub Actions workflows.
+- **.github/**: Contains GitHub-specific configurations and templates.
 
-  - `ci.yml`: Workflow file for CI/CD pipeline.
+  - **ISSUE_TEMPLATE/**: Directory for issue templates used by GitHub to guide users in reporting bugs and issues.
+    - `bug_report.md`: Template for reporting bugs and issues.
+  - **workflows/**: Contains GitHub Actions workflows.
+    - `ci.yml`: Workflow file for Continuous Integration/Continuous Deployment (CI/CD) pipeline.
 
 - **css/**: Directory for CSS files.
 
-  - `normalize.css`: CSS reset file to standardize browser styling.
+  - `normalize.css`: CSS reset file to standardize browser styling across different browsers.
   - `styles.css`: Main stylesheet for the project.
   - **components/**: Directory for modular CSS components.
     - `header.css`: Styles for the header component.
@@ -44,7 +47,8 @@ A playground to expand tech skills, test ideas, and learn new tech.
 
 - **images/**: Directory for image assets.
 
-  - `milkyway.jpg`: Placeholder background image of the Milky Way.
+  - `Mysterious-Universe.jpg`: Background image of a portion of the universe.
+  - `MYSTR-site-title.png`: Hero site title image.
 
 - **js/**: Directory for JavaScript files.
 
@@ -56,15 +60,19 @@ A playground to expand tech skills, test ideas, and learn new tech.
   - `android-chrome-512x512.png`: High-resolution icon for Android devices.
   - `apple-touch-icon.png`: Icon for iOS devices.
   - `CNAME`: Specifies the custom domain for GitHub Pages.
+  - `CODE_OF_CONDUCT.md`: Document outlining the expected behavior and guidelines for contributors.
+  - `CONTRIBUTING.md`: Guidelines for contributing to the project.
   - `favicon-16x16.png`: Standard favicon size.
   - `favicon-32x32.png`: Standard favicon size.
   - `favicon.ico`: The favicon file.
   - `generate-version.js`: Node.js script to generate `version.txt` with the last commit date and time.
   - `index.html`: The main HTML file for the project.
+  - `LICENSE.md`: Document specifying the license under which the project is distributed.
   - `package-lock.json`: Auto-generated file for npm dependencies.
   - `package.json`: Configuration file for npm, including scripts and dependencies.
   - `README.md`: Documentation for the project, with details about what is developed and what will be developed.
-  - `site.manifest`: File created for PWA support.
+  - `SECURITY.md`: Security policy document outlining how to report vulnerabilities.
+  - `site.manifest`: File created for Progressive Web App (PWA) support.
   - `version.txt`: File that stores the last commit date and time.
 
 ## Recent Updates
@@ -72,7 +80,10 @@ A playground to expand tech skills, test ideas, and learn new tech.
 ### Date: 2024-07-28
 
 - Added JavaScript to block users from selecting, copying, or dragging images.
-- Added a CC BY-NC-SA 4.0 license
+- Added a CC BY-NC-SA 4.0 license,
+- Added the Code of Conduct, Contributing, Security, and Bug Report documents to follow GitHub Community Guideline recommendations.
+- Added and styled a basic footer.
+- Deleted an unused image and an empty file "Icon".
 
 ### Date: 2024-07-15
 
