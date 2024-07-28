@@ -12,3 +12,15 @@ fetch("../version.txt")
     console.log(versionInfo);
   })
   .catch((error) => console.error("Error fetching version info:", error));
+
+// Block image selection, copying, and dragging
+document.querySelectorAll("img").forEach((img) => {
+  // Prevent right-click on images
+  img.addEventListener("contextmenu", (event) => event.preventDefault());
+
+  // Prevent dragging images
+  img.addEventListener("dragstart", (event) => event.preventDefault());
+
+  // Prevent selecting images
+  img.addEventListener("selectstart", (event) => event.preventDefault());
+});

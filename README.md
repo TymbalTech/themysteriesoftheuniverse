@@ -69,6 +69,10 @@ A playground to expand tech skills, test ideas, and learn new tech.
 
 ## Recent Updates
 
+### Date: 2024-07-28
+
+- Added JavaScript to block users from selecting, copying, or dragging images.
+
 ### Date: 2024-07-15
 
 - Added twinkling star.
