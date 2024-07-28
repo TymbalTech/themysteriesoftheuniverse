@@ -59,12 +59,44 @@ sup {
   font-family: "Crimson Pro", serif;
 }
 
+/* Specific paragraph styles */
+p.small {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+}
+
+p.medium {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
+}
+
+p.large {
+  font-family: "Crimson Pro", serif;
+  font-size: 18px;
+  line-height: 1.6; /* Improved readability */
+}
+
 /*** 4. PAGE LAYOUT ***/
+html,
 body {
   margin: 0;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #0f1926; /* New Moon Black as background */
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
 }
 
 /* Background image with parallax effect */
@@ -145,7 +177,7 @@ body::before {
     32% 57%,
     2% 35%,
     39% 35%
-  ); /* Star shape *
+  ); /* Star shape */
   opacity: 0; /* Start fully transparent */
   transition: opacity 0.3s ease-in-out; /* Smooth opacity transition */
   animation: grow-star 3s infinite alternate; /* Growing animation */
@@ -178,3 +210,32 @@ body::before {
 }
 
 /*** 8. FOOTER ***/
+footer {
+  background-color: rgba(
+    190,
+    216,
+    241,
+    0.8
+  ); /* Light Blue with opacity for a translucent effect */
+  color: #0f1926; /* New Moon Black for text color */
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  width: 100%; /* Ensure the footer stretches across the full width */
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #0f1926; /* New Moon Black for links */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; /* Smooth transition for color and glow */
+}
+
+footer a:hover {
+  color: #00265d; /* Dark Blue for text color on hover */
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.5),
+    0 0 5px rgba(255, 255, 255, 0.5), 0 0 7px rgba(255, 255, 255, 0.5); /* White glow effect with 50% opacity */
+}
