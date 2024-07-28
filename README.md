@@ -72,6 +72,7 @@ A playground to expand tech skills, test ideas, and learn new tech.
 ### Date: 2024-07-28
 
 - Added JavaScript to block users from selecting, copying, or dragging images.
+- Added a CC BY-NC-SA 4.0 license
 
 ### Date: 2024-07-15
 
