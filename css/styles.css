@@ -6,6 +6,7 @@
 /*** 5. CSS GRID DEFINITION ***/
 /*** 6. SITE TITLE SECTION ***/
 /*** 7. CAROUSEL SECTION ***/
+/*** 8. FOOTER ***/
 /*-----------------------------*/
 
 /*** 1. BOX SIZING ***/
@@ -175,3 +176,5 @@ body::before {
     background-color: #fff; /* White color */
   }
 }
+
+/*** 8. FOOTER ***/
